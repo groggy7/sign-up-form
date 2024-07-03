@@ -1,0 +1,124 @@
+@font-face {
+    font-family: norsebold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Karla", serif;
+}
+
+.page {
+    display: flex;
+}
+
+.padding {
+    padding: 50px;
+}
+
+.bg {
+    flex: 1 0 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg img {
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay img {
+    width: 75px;
+    height: 90px;
+}
+
+.overlay-text {
+    font-size: 48px;
+    font-family: "norsebold", serif;
+}
+
+.form-container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background-color: #F9FAFB;
+}
+
+.header {
+    font-weight: bold;
+    width: 70%;
+    font-size: 20px;
+}
+
+.form-box {
+    background-color: white;
+    box-shadow: 0px 2px 9px 0px rgba(94,84,84,0.75);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#submit {
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 50px;   
+}
+
+form label {
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.802);
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    width: 200px;
+    height: 20px;
+}
+
+input:focus {
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
